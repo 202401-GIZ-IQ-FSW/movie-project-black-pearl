@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { faBurger } from "@fortawesome/free-solid-svg-icons";
+
 function Navbar() {
   return (
     <nav className="bg-[#131010] text-white font-fugaz border-b-2 border-b-[#C0434B]">
@@ -44,7 +48,13 @@ function Navbar() {
           <input className="p-2 rounded-lg" placeholder="Search"></input>
         </form>
         {/* Humbergur */}
-        <button className="lg:hidden">Menu</button>
+        <div className="md:hidden">
+          <FontAwesomeIcon
+            icon={faBurger}
+            size="2x"
+            className=" cursor-pointer hover:text-[#C0434B]"
+          />
+        </div>
       </div>
     </nav>
   );
