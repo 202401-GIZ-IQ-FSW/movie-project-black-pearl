@@ -52,7 +52,7 @@ async function MovieDetails({ params }) {
             className="w-full aspect-video bg-contain"
             style={{
               background: `url('https://image.tmdb.org/t/p/original${movie.backdrop_path}')`,
-              backgroundSize: "contain",
+              backgroundSize: "cover",
               backgroundAttachment: "fixed",
             }}
           ></div>
