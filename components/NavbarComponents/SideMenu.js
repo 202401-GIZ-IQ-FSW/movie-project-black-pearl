@@ -9,7 +9,7 @@ function SideMenu({ isOpen, toggleClose }) {
     <div
       className={
         isOpen
-          ? "fixed bg-black h-svh max-w-sm top-0 right-0 md:hidden px-4 z-10 border-l-4 border-l-[#C0434B]"
+          ? "fixed bg-black bg-opacity-80 h-svh max-w-sm top-0 right-0 md:hidden px-12 z-10 border-l-4 border-l-[#C0434B]"
           : "hidden"
       }
     >
@@ -20,8 +20,8 @@ function SideMenu({ isOpen, toggleClose }) {
         className="absolute top-4 right-4 cursor-pointer text-white hover:text-[#C0434B]"
         onClick={toggleClose}
       />
-      <div className="h-full flex flex-col justify-center items-center space-y-24">
-        <div className="bg-white p-10 rounded-full w-2/3">
+      <div className="h-full flex flex-col mt-8 space-y-16">
+        <div className="bg-white self-center p-10 rounded-full w-2/3">
           <img src="/logo.png" />
         </div>
         <SearchBox isSideMenu={true} />
